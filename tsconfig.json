@@ -21,7 +21,18 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@default-form/*":[
+        "src/app/default-form/*"
+      ],
+      "@cva-form/":[
+        "src/app/cva-form/*"
+      ],
+      "@dynamic-form/":[
+        "src/app/dynamic-form/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
