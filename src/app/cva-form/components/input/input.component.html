@@ -1,0 +1,10 @@
+<!-- type text -->
+<div class="form-group">
+    <label [for]="fieldName" class="form-label">Username</label>
+    <input type="text" class="form-control" [ngClass]="{
+        'has-error':
+            formField?.invalid
+            && formField?.dirty
+    }" [id]="fieldName" [name]="fieldName" [value]="value" [disabled]="isDisabled" (input)="onChange( $event )"
+        (blur)="touched()">
+</div>

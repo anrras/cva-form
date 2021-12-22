@@ -26,7 +26,7 @@
       "@default-form/*":[
         "src/app/default-form/*"
       ],
-      "@cva-form/":[
+      "@cva-form/*":[
         "src/app/cva-form/*"
       ],
       "@dynamic-form/":[
