@@ -1,0 +1,67 @@
+<form [formGroup]="form" class="form">
+    <!-- type text -->
+    <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" aria-describedby="username"
+            placeholder="Enter username" formControlName="username">
+    </div>
+    <!-- type password -->
+    <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" aria-describedby="password"
+            placeholder="Enter password" formControlName="password">
+    </div>
+    <!-- type date -->
+    <div class="form-group">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" name="date" aria-describedby="date" placeholder="Enter date"
+            formControlName="date">
+    </div>
+    <!-- type number -->
+    <div class="form-group">
+        <label for="number" class="form-label">Number</label>
+        <input type="number" class="form-control" id="number" name="number" aria-describedby="number"
+            placeholder="Enter number" formControlName="number">
+    </div>
+    <!-- type textarea -->
+    <div class="form-group">
+        <label for="number" class="form-label">Textarea</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Enter textarea"
+            formControlName="textarea"></textarea>
+
+    </div>
+    <!-- type select -->
+    <div class="form-group">
+        <label for="select" class="form-label">Select</label>
+        <select name="select" id="select" formControlName="select">
+            <option [value]="null" selected hidden>Seleccione item</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+    <!-- type checkbox -->
+    <div class="form-group">
+        <label for="checkbox" class="form-label">Checkbox</label>
+        <input type="checkbox" class="form-control" id="checkbox" name="checkbox" aria-describedby="checkbox"
+            placeholder="Enter checkbox" formControlName="checkbox">
+    </div>
+    <!-- type radio -->
+    <div class="form-group">
+        <label for="radio">Radio</label>
+        <div>
+            <input type="radio" id="html" name="radio" value="HTML" formControlName="radio">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="radio" value="CSS" formControlName="radio">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="radio" value="JavaScript" formControlName="radio">
+            <label for="javascript">JavaScript</label>
+        </div>
+    </div>
+
+
+
+    <button class="" (click)="submit()">Submit</button>
+</form>
